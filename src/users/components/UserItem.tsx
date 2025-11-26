@@ -8,8 +8,8 @@ function UserItem(props) {
         {props.singleUser.username} (id: {props.singleUser.id})
       </h1>
       <p>{props.singleUser.age}</p>
-      <p>{props.singleUser.email}</p>
-      <p>{props.singleUser.city}</p>
+      <span>{props.singleUser.email}</span>
+      <span>{props.singleUser.city}</span>
 
       <button>Open User</button>
     </div>
