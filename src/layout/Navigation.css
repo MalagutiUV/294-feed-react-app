@@ -1,0 +1,17 @@
+.nav-button {
+  color: blue;
+  font-size: 32px;
+  padding: 8px;
+}
+
+.navLinkItem {
+  margin: 5px;
+  background-color: indigo;
+  padding: 2px;
+}
+
+#nav {
+  display: flex;
+  column-gap: 8px;
+  border-bottom: 1px solid black;
+}
