@@ -1,9 +1,8 @@
 import { NavLink } from "react-router";
-import "./Navigation.css";
 
 function Navigation() {
   return (
-    <nav id='nav'>
+    <nav className='flex gap-4'>
       <NavLink className='navLinkItem' to='/welcome' end>
         Welcome Page
       </NavLink>
@@ -12,6 +11,17 @@ function Navigation() {
       </NavLink>
       <NavLink className='navLinkItem' to='/users'>
         Users Page
+      </NavLink>
+
+      <NavLink className='navLinkItem' to='/rooms'>
+        Rooms
+      </NavLink>
+      <NavLink className='navLinkItem' to='/feed'>
+        Feed
+      </NavLink>
+
+      <NavLink className='navLinkItem' to='/profile'>
+        UserProfile
       </NavLink>
     </nav>
   );

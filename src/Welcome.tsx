@@ -13,6 +13,12 @@ function Welcome() {
       <p className='read-the-docs'>
         Click on the Vite and React logos to learn more
       </p>
+      <input
+        type='checkbox'
+        value='synthwave'
+        className='checkbox theme-controller'
+      />
+      <button className='btn'>Test Button</button>
     </>
   );
 }
