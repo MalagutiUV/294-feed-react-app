@@ -80,6 +80,12 @@ function PostCreatePage() {
           <input type='submit' className='btn' value='Posten' />
         </div>
         <hr />
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+
+        {/* AB HIER IST DIE YOUTUBE SUCHE */}
         <div>
           <h3 className='font-bold text-lg'>Suchen nach Youtube!</h3>
           <div>
