@@ -4,21 +4,21 @@ function Navigation() {
   return (
     <nav className='flex gap-4'>
       <NavLink className='navLinkItem' to='/welcome' end>
-        <button className='btn'>Welcome Page</button>
+        <button className='btn btn-neutral'>Welcome Page</button>
       </NavLink>
 
       <NavLink className='navLinkItem' to='/feed'>
-        <button className='btn'>Feed</button>
+        <button className='btn btn-neutral'>Feed</button>
       </NavLink>
 
       <NavLink className='navLinkItem' to='/profile'>
-        <button className='btn'>UserProfile</button>
+        <button className='btn btn-neutral'>UserProfile</button>
       </NavLink>
       <NavLink className='navLinkItem' to='/auth/logout'>
-        <button className='btn'>Logout</button>
+        <button className='btn btn-neutral'>Logout</button>
       </NavLink>
       <NavLink className='navLinkItem' to='/auth/login'>
-        <button className='btn'>Login</button>
+        <button className='btn btn-neutral'>Login</button>
       </NavLink>
     </nav>
   );

@@ -7,8 +7,9 @@ import Welcome from "./Welcome";
 import LoginPage from "./auth/LoginPage";
 import ProtectedRoute from "./auth/ProtectedRoutes";
 import UserProfilePage from "./profile/UserProfilePage";
-import Feed from "./posts/Feed";
+import FeedPage from "./posts/FeedPage";
 import LogoutPage from "./auth/LogoutPage";
+import PostCreatePage from "./posts/PostCreatePage";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           path='/feed'
           element={
             <ProtectedRoute>
-              <Feed />
+              <FeedPage />
             </ProtectedRoute>
           }
         />
@@ -33,6 +34,14 @@ function App() {
           element={
             <ProtectedRoute>
               <UserProfilePage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path='/profile/create'
+          element={
+            <ProtectedRoute>
+              <PostCreatePage />
             </ProtectedRoute>
           }
         />
