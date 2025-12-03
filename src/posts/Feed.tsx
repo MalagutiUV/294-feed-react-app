@@ -4,7 +4,6 @@ import PostItem from "./PostItem";
 
 function Feed() {
   const [posts, setPosts] = useState([]);
-
   const [postsLoadedWithAxios, setPostsLoadedWithAxios] = useState([]);
 
   // Dieser Effekt lädt die Posts, wenn die Komponente geladen wird, mit fetch

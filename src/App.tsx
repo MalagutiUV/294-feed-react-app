@@ -8,6 +8,7 @@ import LoginPage from "./auth/LoginPage";
 import ProtectedRoute from "./auth/ProtectedRoutes";
 import UserProfilePage from "./profile/UserProfilePage";
 import Feed from "./posts/Feed";
+import LogoutPage from "./auth/LogoutPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='welcome' element={<Welcome />} />
 
         <Route path='auth/login' element={<LoginPage />} />
+        <Route path='auth/logout' element={<LogoutPage />} />
         <Route
           path='/feed'
           element={

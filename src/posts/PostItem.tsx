@@ -16,7 +16,7 @@ function PostItem(props: any) {
           <div>
             <p>{medialink.source}</p>
             <a href={medialink.url}>{medialink.url}</a>
-            <iframe width='200' height='200' src={medialink.url}></iframe>
+            <iframe width='500' height='200' src={medialink.url}></iframe>
           </div>
         </>
       ))}
