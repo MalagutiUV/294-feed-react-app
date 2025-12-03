@@ -1,10 +1,11 @@
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import { useNavigate } from "react-router";
 
 function LoginPage() {
   // Funktionen wichtig für das Formular
   const { register, handleSubmit } = useForm();
-
+  const navigate = useNavigate();
   async function onLogin(data: any) {
     // Formular Daten in der Konsole ausgeben
     console.log("Login-Daten:", data);
@@ -20,6 +21,7 @@ function LoginPage() {
 
     // Speichere den Token im localStorage
     localStorage.setItem("token", resultData.token);
+    navigate("/feed");
   }
 
   // Formmular mit onSubmit Handler
