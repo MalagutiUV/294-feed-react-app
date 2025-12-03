@@ -4,7 +4,7 @@ function PostItem(props: any) {
   return (
     <div
       key={post.id}
-      className='border-b border-gray-300 p-4 bg-green-400 hover:bg-green-50'
+      className='border-b border-gray-300 p-4 bg-green-100 hover:bg-green-50'
     >
       <h1 className='text-xl font-bold mb-2'>{post.id}</h1>
 
@@ -16,7 +16,7 @@ function PostItem(props: any) {
           <div>
             <p>{medialink.source}</p>
             <a href={medialink.url}>{medialink.url}</a>
-            <iframe width='1175' height='661' src={medialink.url}></iframe>
+            <iframe width='200' height='200' src={medialink.url}></iframe>
           </div>
         </>
       ))}

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function UserProfilePage() {
   const token = localStorage.getItem("token");
-  const [profile, setProfile] = useState(null);
+  const [profile, setProfile] = useState<any>(undefined);
 
   useEffect(() => {
     async function loadProfile() {
@@ -37,7 +37,19 @@ function UserProfilePage() {
 
   return (
     <div>
-      <code>{token}</code>
+      <h1>User Profile Page</h1>
+      {profile ? (
+        <div>
+          <p>
+            <strong>Username:</strong> {profile.username}
+          </p>
+          <p>
+            <strong>Email:</strong> {profile.email}
+          </p>
+        </div>
+      ) : (
+        <p>Loading profile...</p>
+      )}
     </div>
   );
 }

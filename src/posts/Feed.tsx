@@ -50,14 +50,18 @@ function Feed() {
   return (
     <div>
       <h1>Feed loaded With Fetch</h1>
-      {posts.map((post: any) => (
-        <PostItem key={post.id} post={post} />
-      ))}
+      <div className='gap-4'>
+        {posts.map((post: any) => (
+          <PostItem key={post.id} post={post} />
+        ))}
+      </div>
 
-      <h1>Feed loaded With Axios</h1>
-      {postsLoadedWithAxios.map((post: any) => (
-        <PostItem key={post.id} post={post} />
-      ))}
+      <div className='gap-4 mt-20'>
+        <h1>Feed loaded With Axios</h1>
+        {postsLoadedWithAxios.map((post: any) => (
+          <PostItem key={post.id} post={post} />
+        ))}
+      </div>
     </div>
   );
 }
